@@ -111,6 +111,8 @@ http://127.0.0.1:5000/
 * This chatbot is **not a replacement for professional therapy**.
 
 * For critical cases, users are encouraged to seek immediate professional help.
+ 
+> **Dataset Source**: The `suicide_detection.csv` file was downloaded from Kaggle under the dataset titled *"Suicide Detection"* by Faisal Ahmed (2021). Original Source: [https://www.kaggle.com/datasets/faisalahmed48/suicide-detection](https://www.kaggle.com/datasets/faisalahmed48/suicide-detection)   
 
 <br>
 
