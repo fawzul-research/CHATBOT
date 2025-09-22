@@ -1,0 +1,123 @@
+/* Reset some default styles to provide a clean slate */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+header .main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center;
+}
+
+header .main-menu li {
+    margin-right: 20px;
+}
+
+header .main-menu li:last-child {
+    margin-right: 0;
+}
+
+header .main-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header .main-menu a:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-details p {
+    margin-bottom: 5px;
+}
+
+footer .social-media-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .important-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Sample styles for the main content area */
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-bottom: 20px;
+}
+
+/* Sample style for article content */
+article {
+    margin-bottom: 40px;
+}
+
+/* Responsive Styles */
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    header .main-menu {
+        flex-direction: column;
+    }
+
+    header .main-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .contact-details p {
+        margin-bottom: 10px;
+    }
+
+    footer .social-media-links a,
+    footer .important-links a {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+}

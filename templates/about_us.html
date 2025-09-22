@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+	<h1>Welcome to Our Website!</h1>
+	<p>We are a team of experts dedicated to providing high-quality services to our clients.</p>
+	<img src="{{ url_for('static', filename='images/picture4.png') }}" alt="Our Team" width="40%">
+	<h2>Our Team</h2>
+	<ul>
+		<li>x x - CEO</li>
+		<li>y y - Marketing Manager</li>
+		<li>uuu uuu - Sales Representative</li>
+	</ul>
+	<p>Contact us at <a href="mailto:info@ourwebsite.com">info@ourwebsite.com</a></p>
+</body>
+
+{% endblock %}

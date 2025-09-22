@@ -1,0 +1,88 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#chatbox {
+    background-color: #fff;
+    margin: 60px auto;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#userInput {
+    margin: 60px auto;
+    width: 40%;
+}
+
+#textInput {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #009688;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 10px;
+}
+
+#buttonInput {
+    padding: 10px 20px;
+    font-family: monospace;
+    font-size: 17px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.userText {
+    color: #fff;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.userText span {
+    background-color: #009688;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.botText {
+    color: #fff;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.botText span {
+    background-color: #77c043;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+#tidbit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}

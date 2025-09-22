@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <title>Admin Chat Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .dashboard-container {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%; /* Set width to 90% */
+            max-width: 1000px; /* Add max-width for larger screens */
+            margin: 20px; /* Add some margin for spacing */
+        }
+        .user-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .user-item {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #0d6efd;
+        }
+        .user-header {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .message-list {
+            list-style: none;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .message-item {
+            margin-bottom: 5px;
+        }
+        .user-message {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000000; /* Color for user messages */
+        }
+        .bot-reply {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000000; /* Color for chatbot replies */
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Admin Chat Dashboard</h1>
+        
+        <ul class="user-list">
+            {% for user in all_users %}
+            {% if user.username != 'admin' %}
+                <li class="user-item">
+                    <h2 class="user-header">- {{ user.username }}:</h2>
+                    <ul class="message-list">
+                        {% for message in user.chat_messages %}
+                        <li class="message-item {% if message.is_user_message %}user-message{% else %}bot-reply{% endif %}">
+                            {% if message.is_user_message %}<b>User:</b>{% else %}<b>Bot:</b>{% endif %} {{ message.message }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+{% endblock %}

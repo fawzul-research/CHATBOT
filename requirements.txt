@@ -1,0 +1,9 @@
+﻿Flask==2.3.2
+gpt4all==1.0.8
+langchain==0.0.247
+Markdown==3.4.4
+nltk==3.8.1
+scikit-learn==1.2.2
+flask_sqlalchemy==3.1.1
+flask_login==0.6.3
+openai==1.108.1
