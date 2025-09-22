@@ -106,7 +106,7 @@ http://127.0.0.1:5000/
 
 * All sensitive user data is encrypted.
 
-* The **OpenAI API key must be kept private** — can not share it publicly (e.g., in GitHub repos).
+* The **OpenAI API key must be kept private** - can not share it publicly (e.g., in GitHub repos).
 
 * This chatbot is **not a replacement for professional therapy**.
 
